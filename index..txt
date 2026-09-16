@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>  পঞ্চায়েত অফিস</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f7f9;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#0b6e4f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+/* Navigation */
+
+nav{
+    background:#09543d;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#0f8a63;
+}
+
+/* Hero Section */
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') center/cover;
+    height:400px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.5);
+    color:white;
+    padding:20px 30px;
+    border-radius:10px;
+    font-size:45px;
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#0b6e4f;
+    margin-bottom:30px;
+    font-size:35px;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#0b6e4f;
+    margin-bottom:10px;
+}
+
+/* Notice */
+
+.notice{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.notice ul{
+    line-height:2;
+}
+
+/* Complaint Form */
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button{
+    background:#0b6e4f;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0f8a63;
+}
+
+/* Contact */
+
+.contact{
+    background:#0b6e4f;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contact p{
+    margin-top:10px;
+}
+
+/* Footer */
+
+footer{
+    background:#073b2b;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:30px;
+}
+
+header h1{
+    font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+    <h1> রায়চক গ্রাম পঞ্চায়েত অফিস</h1>
+    <p>জনসেবাই আমাদের লক্ষ্য</p>
+</header>
+
+<!-- Navigation -->
+
+<nav>
+    <a href="#">হোম</a>
+    <a href="#">আমাদের সম্পর্কে</a>
+    <a href="#">সেবা</a>
+    <a href="#">নোটিশ</a>
+    <a href="#">অভিযোগ</a>
+    <a href="#">যোগাযোগ</a>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+    <h1>রায়চক গ্রাম পঞ্চায়েত ওয়েবসাইটে স্বাগতম</h1>
+</section>
+
+<!-- Services -->
+
+<div class="container">
+
+    <h2 class="section-title">আমাদের সেবা</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>জন্ম সনদ</h3>
+            <p>জন্ম সনদ আবেদন ও ডাউনলোড সুবিধা।</p>
+        </div>
+
+        <div class="card">
+            <h3>আয় শংসাপত্র</h3>
+            <p>অনলাইনে আয় শংসাপত্র আবেদন করুন।</p>
+        </div>
+
+        <div class="card">
+            <h3>রেশন কার্ড</h3>
+            <p>রেশন কার্ড সম্পর্কিত তথ্য ও আবেদন।</p>
+        </div>
+
+        <div class="card">
+            <h3>কৃষি সহায়তা</h3>
+            <p>কৃষকদের জন্য সরকারি প্রকল্প তথ্য।</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Notice -->
+
+<div class="container">
+
+    <h2 class="section-title">গুরুত্বপূর্ণ নোটিশ</h2>
+
+    <div class="notice">
+
+        <ul>
+            <li>২৫ মে স্বাস্থ্য শিবির অনুষ্ঠিত হবে।</li>
+            <li>নতুন রেশন কার্ড আবেদন শুরু হয়েছে।</li>
+            <li>কৃষি ভর্তুকি আবেদন ৩০ মে পর্যন্ত চলবে।</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Complaint Section -->
+
+<div class="container">
+
+    <h2 class="section-title">অভিযোগ জানান</h2>
+
+    <div class="notice">
+
+        <input type="text" id="name" placeholder="আপনার নাম">
+
+        <input type="text" id="mobile" placeholder="মোবাইল নাম্বার">
+
+        <textarea id="complaint"
+        placeholder="আপনার অভিযোগ লিখুন"></textarea>
+
+        <button onclick="sendWhatsApp()">
+            অভিযোগ পাঠান
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Contact -->
+
+<section class="contact">
+
+    <h2>যোগাযোগ করুন</h2>
+
+    <p>গ্রাম পঞ্চায়েত অফিস, পশ্চিমবঙ্গ</p>
+
+    <p>📞 +91 9876543210</p>
+
+    <p>✉ info@grampanchayat.in</p>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+    <p>© 2026 গ্রাম পঞ্চায়েত | All Rights Reserved</p>
+</footer>
+
+<!-- JavaScript -->
+
+<script>
+
+function sendWhatsApp(){
+
+    let name =
+    document.getElementById("name").value;
+
+    let mobile =
+    document.getElementById("mobile").value;
+
+    let complaint =
+    document.getElementById("complaint").value;
+
+    if(name=="" || mobile=="" || complaint==""){
+        alert("সব তথ্য পূরণ করুন");
+        return;
+    }
+
+    let phoneNumber = "9647921787";
+    // এখানে নিজের WhatsApp নাম্বার দিন
+
+    let message =
+    " পঞ্চায়েত অভিযোগ%0A%0A" +
+    "নাম: " + name + "%0A" +
+    "মোবাইল: " + mobile + "%0A" +
+    "অভিযোগ: " + complaint;
+
+    let url =
+    "https://wa.me/" + phoneNumber + "?text=" + message;
+
+    window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
